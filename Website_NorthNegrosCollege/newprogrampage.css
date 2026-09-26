@@ -1,0 +1,367 @@
+/* ================================
+   PROGRAMMING PAGE
+================================ */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    background: #061b12;
+    color: white;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.program-hero {
+
+    min-height: 65vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 40, 25, 0.82),
+            rgba(0, 20, 12, 0.95)
+        ),
+        url("images/program.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.program-content {
+    max-width: 900px;
+}
+
+
+.program-icon {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+
+.small-title {
+
+    color: #62ff9b;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.program-content h1 {
+
+    font-size: clamp(45px, 8vw, 90px);
+
+    margin: 10px 0;
+
+    line-height: 1;
+}
+
+
+.program-content h1 span {
+    display: block;
+    color: #62ff9b;
+}
+
+
+.program-content > p {
+
+    max-width: 700px;
+
+    margin: 25px auto;
+
+    line-height: 1.8;
+
+    color: #d5e9dd;
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-btn {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    background: #32d66f;
+
+    color: #062015;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.back-btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(50, 214, 111, 0.3);
+}
+
+
+/* ================================
+   CONTENT SECTION
+================================ */
+
+.content-section {
+
+    padding: 80px 8%;
+}
+
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.section-title p {
+
+    color: #62ff9b;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.section-title h2 {
+
+    font-size: 42px;
+
+    margin: 10px 0;
+}
+
+
+.section-title h2 span {
+
+    color: #62ff9b;
+}
+
+
+/* ================================
+   SKILL CARDS
+================================ */
+
+.topics {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px, 1fr)
+        );
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.topic-card {
+
+    background: #0b2b1c;
+
+    border:
+        1px solid
+        rgba(98, 255, 155, 0.15);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+
+.topic-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #62ff9b;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+.topic-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.topic-card h3 {
+
+    color: #62ff9b;
+
+    margin-bottom: 12px;
+}
+
+
+.topic-card p {
+
+    color: #c8d9cf;
+
+    line-height: 1.7;
+}
+
+
+/* ================================
+   CAREER SECTION
+================================ */
+
+.career-box {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d3824,
+            #082117
+        );
+
+    text-align: center;
+}
+
+
+.career-box > p {
+
+    color: #c8d9cf;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   CAREER LIST
+================================ */
+
+.career-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.career {
+
+    padding: 18px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+
+.career:hover {
+
+    background: #32d66f;
+
+    color: #062015;
+
+    transform: translateY(-4px);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #03120b;
+
+    color: #a9bdb1;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .program-content h1 {
+        font-size: 45px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .career-box {
+        padding: 30px 20px;
+    }
+
+    .content-section {
+        padding: 60px 5%;
+    }
+
+}
+```
